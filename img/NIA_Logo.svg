@@ -16,7 +16,10 @@
    height="200"
    viewBox="0 0 307.112 200"
    sodipodi:docname="NIA_Logo.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/home/opntec/git/techcul.org/img/NIA Logo.png"
+   inkscape:export-xdpi="80"
+   inkscape:export-ydpi="80"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -85,7 +88,7 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.8578873"
-     inkscape:cx="207.52617"
+     inkscape:cx="208.06441"
      inkscape:cy="14.754129"
      inkscape:window-x="0"
      inkscape:window-y="0"
