@@ -1,0 +1,194 @@
+.dark-layer {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+  .schedule a {
+  color: #E12B00;
+  border: none;
+}
+
+.schedule a:hover {
+  color: #E12B00;
+  text-decoration: underline;
+  border: none;
+}
+
+.schedule a:active {
+  color: red;
+  text-decoration: underline;
+  border: none;
+}
+
+.schedule a:visited {
+  color: #B82300;
+  text-decoration: none;
+  border: none;
+}
+
+.tweets-feed {
+  color: #FFFFFF;
+  line-height: 25px;
+  font-size: 20px;
+  transition: opacity 0.2s linear;
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.tweets-feed a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-weight:700;
+}
+
+.tweets-feed a:hover {
+  color: #FFFFFF;
+}
+
+.tweets-feed .dateTweeted {
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.subscribe-1 .email-subscribe {
+  margin-bottom: 50px !important;
+}
+.newsletter-name{
+  padding-right: 0px;
+}
+.newsletter-name input{
+  border-radius: 10px 0px 0px 10px;
+}
+.newsletter-email{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.newsletter-email input{
+  border-radius: 0px;
+}
+.newsletter-submit{
+  padding-left: 0px;
+}
+.newsletter-submit input{
+  border-radius: 0px 10px 10px 0px;
+}
+.social-profiles a i{
+  transition: all .5s;
+}
+.social-profiles a:hover i{
+  color: grey;
+}
+.sticky-nav .menu li a:hover {
+  border-color: #C3BFBF;
+  border-bottom-width: 2px;
+  margin-bottom: 2px;
+}
+
+.sidebar-content .widget ul li a:hover{
+  border-color: #C3BFBF;
+  border-bottom-width: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.item .wp-post-image{
+  height: auto;
+}
+.header-text:hover {
+  color: #C3BFBF !important;
+}
+.header-text:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.sub-heading-font
+{
+  font-size: 35px;
+}
+@media screen and (min-width: 350px) and (max-width: 440px)
+{
+  #DevPrograms{
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 350px)
+{
+  #DevPrograms{
+      height: 115vh;
+  }
+}
+
+@media screen and (min-width: 240px) and (max-width: 290px)
+{
+  #DevPrograms{
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 240px)
+{
+  #DevPrograms{
+    height: 180vh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 989px)
+{
+  .color-blocks a{
+    padding: 15px 0px 15px 0px;
+  }
+}
+/*css classes for hiding and showing Donation and regular supporter parts in donate.html*/
+.appear{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.baddition{
+  margin-left:  600px;
+}
+.background-image {
+  width: 100%;
+}
+@media(max-width:768px)
+{
+.lightbox-gallery{
+   margin-top:10px;
+  }
+}
+@media screen and (max-width: 560px){
+  .price{
+    font-size: 10vw !important;
+  }
+}
+.equal-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: grey;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50;
+}
+
+#myBtn:hover {
+    background-color: transparent;
+}

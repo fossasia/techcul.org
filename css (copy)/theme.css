@@ -59,7 +59,7 @@
 }
 .overlay:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
   content: '';
   width: 100%;
@@ -827,7 +827,7 @@ nav .container {
 }
 .hero-slider .slides li:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.4;
   position: absolute;
   content: '';
   width: 100%;
@@ -1979,16 +1979,16 @@ p.question {
   background: #f5f5f5;
 }
 .sponsor {
-  margin-bottom: 96px;
+  margin-bottom: 36px;
   height: 80px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 350px;
+  max-width: 150px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 140px;
+  max-height: 80px;
 }
 .sponsors span {
   display: inline-block;

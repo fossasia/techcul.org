@@ -1,29 +1,3 @@
-/*!
-// Contents
-// ------------------------------------------------
-
- 1. Mixins
- 2. Helper classes & resets
- 3. Loader
- 4. Colours
- 5. Typography
- 6. Spacing
- 7. Buttons
- 8. Navigation
- 9. Slider, Dividers
- 10. Speakers & Topics
- 11. Schedule
- 12. Galleries
- 13. Pricing & FAQ
- 14. Subscribe
- 15. Contact
- 16. Forms
- 17. Footers
-
-// --------------------------------------------------*/
-/*!
-// 1. Useful Mixins
-// --------------------------------------------------*/
 .vertical-align {
   position: relative;
   top: 50%;
@@ -59,7 +33,7 @@
 }
 .overlay:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
   content: '';
   width: 100%;
@@ -71,9 +45,6 @@
   position: relative;
   z-index: 2;
 }
-/*!
-// 2. Helper Classes & Resets
-// --------------------------------------------------*/
 .go-right {
   right: 0px;
 }
@@ -88,28 +59,6 @@ img {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
-.main-container,
-.footer-container,
-.nav-container,
-nav {
-  max-width: 1600px;
-  margin: 0px auto;
-}
-.boxed-layout .main-container,
-.boxed-layout .nav-container,
-.boxed-layout nav,
-.boxed-layout .footer-container {
-  max-width: 1366px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.no-loader .loader {
-  display: none !important;
-}
-/*!
-// 3. Loader
-// --------------------------------------------------*/
 .loader {
   position: fixed;
   top: 0px;
@@ -140,7 +89,7 @@ nav {
 .strip-3 {
   width: 20px;
   height: 20px;
-  background: #0072bc;
+  background: #ffda00;
   position: relative;
   -webkit-animation: stripMove 2s ease infinite alternate;
   animation: stripMove 2s ease infinite alternate;
@@ -149,12 +98,12 @@ nav {
 .strip-2 {
   -webkit-animation-duration: 2.1s;
   animation-duration: 2.1s;
-  background-color: #23a8ff;
+  background-color: #ffe966;
 }
 .strip-3 {
   -webkit-animation-duration: 2.2s;
   animation-duration: 2.2s;
-  background-color: #89d1ff;
+  background-color: #fff8cc;
 }
 @-webkit-keyframes stripMove {
   0% {
@@ -220,11 +169,13 @@ nav {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
+  opacity: 0;
 }
 nav {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
+  opacity: 0;
 }
 .show-content {
   opacity: 1 !important;
@@ -232,18 +183,12 @@ nav {
 .hide-loader {
   opacity: 0 !important;
 }
-/*!
-// 4. Colours
-// --------------------------------------------------*/
 .background-dark {
   background-color: #333333 !important;
 }
 .color-heading {
   color: #333333;
 }
-/*!
-// 5. Typography
-// --------------------------------------------------*/
 .text-white {
   color: #fff;
 }
@@ -254,8 +199,7 @@ body {
   color: #777777;
   font-size: 14px;
   line-height: 24px;
-  background: #eee;
-  -moz-osx-font-smoothing: grayscale;
+  background: #333333;
 }
 h1,
 h2,
@@ -334,9 +278,6 @@ ul {
     line-height: 26px;
   }
 }
-/*!
-// Spacing Standards
-// --------------------------------------------------*/
 section {
   padding: 72px 0px;
   background: #fff;
@@ -344,9 +285,6 @@ section {
 .duplicatable-content {
   padding-bottom: 36px;
 }
-/*!
-// 6. Buttons
-// --------------------------------------------------*/
 a:hover {
   text-decoration: none;
 }
@@ -374,8 +312,8 @@ span a:hover {
 }
 p a,
 .text-link a {
-  color: #0072bc !important;
-  border-color: #0072bc;
+  color: #ffda00 !important;
+  border-color: #ffda00;
   padding-bottom: 2px;
 }
 p a,
@@ -385,7 +323,7 @@ p a,
 .btn {
   min-width: 180px;
   border-radius: 25px;
-  background: #0072bc;
+  background: #ffda00;
   text-align: center;
   padding: 13px 0px 14px 0px;
   color: #fff;
@@ -398,23 +336,23 @@ p a,
 }
 .btn:hover {
   color: #fff;
-  background: #0063a3;
+  background: #e6c400;
 }
 .btn-hollow {
   background: none;
-  border: 2px solid #0072bc;
-  color: #0072bc;
+  border: 2px solid #ffda00;
+  color: #ffda00;
 }
 .btn-hollow:hover {
-  background: #0072bc;
+  background: #ffda00;
 }
 .btn-white {
   background: #fff;
-  color: #0072bc;
+  color: #ffda00;
 }
 .btn-white:hover {
   background: #fff;
-  color: #005389;
+  color: #ccae00;
 }
 .btn-hollow.btn-white {
   background: none;
@@ -423,17 +361,8 @@ p a,
 }
 .btn-hollow.btn-white:hover {
   background: #fff;
-  color: #0072bc;
+  color: #ffda00;
 }
-.btn-lg {
-  padding: 20px 0px 21px 0px;
-  text-transform: uppercase;
-  min-width: 230px;
-  border-radius: 35px;
-}
-/*!
-// Backgrounds & Parallax
-// --------------------------------------------------*/
 .background-image-holder {
   position: absolute;
   width: 100%;
@@ -442,21 +371,15 @@ p a,
   background-size: cover !important;
   background-position: 50% 50% !important;
 }
-.background-image-holder img {
-  display: none;
-}
 .image-holder {
   position: relative;
   overflow: hidden;
 }
-/*!
-// 7. Navigation
-// --------------------------------------------------*/
 nav .logo {
   max-height: 45px;
   max-width: 110px;
   position: absolute;
-  top: -15px;
+  top: -6px;
   opacity: 1;
 }
 nav .text-right {
@@ -537,17 +460,21 @@ nav .container {
 .nav-dropdown {
   position: absolute;
   z-index: -1;
-  display: none;
-  background: rgba(255, 255, 255, 0.9);
+  max-height: 0px;
+  background: rgba(255, 255, 255, 0.3);
   min-width: 200px;
-  overflow: hidden;
-  margin-top: -2px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
 }
 .nav-dropdown li:first-child {
   margin-top: 12px;
 }
 .nav-dropdown li {
   opacity: 0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
   margin-right: 0px;
   float: none;
   margin-bottom: 18px;
@@ -555,7 +482,6 @@ nav .container {
 .nav-dropdown li a {
   padding-bottom: 0px;
   padding-left: 24px;
-  color: #333333;
 }
 .nav-dropdown li a:hover {
   border-color: rgba(0, 0, 0, 0);
@@ -563,7 +489,6 @@ nav .container {
 .has-dropdown:hover .nav-dropdown {
   z-index: 10;
   max-height: 300px;
-  display: block;
 }
 .has-dropdown:hover .nav-dropdown li {
   opacity: 1;
@@ -715,6 +640,13 @@ nav .container {
   background: #474747;
   padding: 18px;
 }
+.sidebar-menu .logo {
+  max-width: 110px;
+  position: relative;
+  top: 21px;
+  margin-bottom: 32px;
+  left: 24px;
+}
 .relative-nav {
   position: relative;
   padding-top: 28px;
@@ -743,13 +675,6 @@ nav .container {
 }
 .relative-nav .logo {
   top: -4px !important;
-}
-.sidebar-menu .logo {
-  max-width: 110px;
-  position: relative;
-  top: 21px !important;
-  margin-bottom: 32px;
-  left: 24px;
 }
 @media all and (max-width: 768px) {
   nav {
@@ -808,14 +733,10 @@ nav .container {
     color: #333333;
   }
 }
-/*!
-// 8. Sliders & Dividers & Headers
-// --------------------------------------------------*/
 .hero-slider {
   padding: 0px;
   position: relative;
   overflow: hidden;
-  background: #2b2b2b;
 }
 .hero-slider .slides li {
   height: 780px;
@@ -827,7 +748,7 @@ nav .container {
 }
 .hero-slider .slides li:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.4;
   position: absolute;
   content: '';
   width: 100%;
@@ -853,7 +774,7 @@ nav .container {
 }
 .hero-slider .btn-hollow:hover {
   background: #fff;
-  color: #0072bc;
+  color: #ffda00;
 }
 @media all and (max-width: 767px) {
   .hero-slider .btn-hollow {
@@ -871,8 +792,7 @@ nav .container {
 .register-header form.register span {
   color: #fff;
 }
-.register-header .logo,
-.hero-slide .logo {
+.register-header .logo {
   max-width: 150px;
   display: block;
   margin-bottom: 12px;
@@ -894,9 +814,6 @@ nav .container {
   }
 }
 @media all and (max-width: 767px) {
-  .hero-slide .logo {
-    max-width: 100px;
-  }
   .register-header .logo {
     display: none;
   }
@@ -912,9 +829,6 @@ nav .container {
   .register-header input,
   .register-header .select-holder {
     max-width: 100% !important;
-  }
-  .hero-slider h1 {
-    margin-bottom: 18px;
   }
 }
 .testimonials-slider {
@@ -935,7 +849,7 @@ nav .container {
   text-align: left;
 }
 .primary-overlay:before {
-  background-color: #0072bc;
+  background-color: #ffda00;
   opacity: 0.8;
   position: absolute;
   content: '';
@@ -943,7 +857,7 @@ nav .container {
   height: 100%;
   z-index: 1;
   top: 0px;
-  background-color: #0072bc !important;
+  background-color: #ffda00 !important;
 }
 .strip-divider {
   padding: 216px 0px;
@@ -956,11 +870,6 @@ nav .container {
 }
 .strip-divider h1 {
   margin: 0px;
-  font-size: 36px;
-  line-height: 48px;
-}
-.strip-divider a:hover {
-  color: #fff !important;
 }
 @media all and (max-width: 767px) {
   .strip-divider {
@@ -1082,48 +991,6 @@ nav .container {
     display: none;
   }
 }
-.call-to-action {
-  padding: 144px 0px;
-}
-.call-to-action .uppercase {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 32px;
-}
-.call-to-action h1 {
-  margin-bottom: 32px;
-}
-.call-to-action .btn {
-  margin-bottom: 40px;
-}
-.call-to-action a i {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  margin-right: 12px;
-  font-size: 24px;
-  line-height: 60px;
-}
-.call-to-action .social_facebook {
-  background-color: #3b5998;
-}
-.call-to-action .social_twitter {
-  background-color: #00aced;
-}
-.call-to-action a:last-of-type i {
-  margin-right: 0px;
-}
-@media all and (max-width: 768px) {
-  .call-to-action {
-    padding: 72px 0px;
-  }
-}
-/*!
-// 9. Image with text
-// --------------------------------------------------*/
 .image-with-text {
   overflow: hidden;
   position: relative;
@@ -1150,9 +1017,6 @@ nav .container {
     transform: translateY(0px);
   }
 }
-/*!
-// Promo Blocks
-// --------------------------------------------------*/
 .color-blocks {
   position: relative;
   overflow: hidden;
@@ -1188,14 +1052,14 @@ nav .container {
 }
 .color-blocks i,
 .contained-promo i {
-  color: #0072bc;
+  color: #ffda00;
   font-size: 70px;
   display: inline-block;
   border: 2px solid #fff;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  line-height: 117px;
+  line-height: 120px;
   background: #fff;
   text-align: center;
   transition: all 0.1s ease-out;
@@ -1203,10 +1067,10 @@ nav .container {
   -moz-transition: all 0.1s ease-out;
 }
 .block-left {
-  background-color: #0072bc;
+  background-color: #ffda00;
 }
 .block-right {
-  background-color: #005993;
+  background-color: #d6b700;
   right: 0px;
 }
 @media all and (max-width: 768px) {
@@ -1231,9 +1095,6 @@ nav .container {
     margin-bottom: 30px;
   }
 }
-/*!
-// 10. Speakers & Topics
-// --------------------------------------------------*/
 .speakers-row {
   padding: 0px 15px;
 }
@@ -1347,7 +1208,7 @@ nav .container {
 }
 .topic i {
   font-size: 60px;
-  color: #0072bc;
+  color: #ffda00;
   display: inline-block;
   margin-bottom: 32px;
 }
@@ -1373,9 +1234,6 @@ nav .container {
     float: left !important;
   }
 }
-/*!
-// 11. Schedule
-// --------------------------------------------------*/
 .inline-video {
   background: #f5f5f5;
 }
@@ -1388,7 +1246,6 @@ nav .container {
   min-width: 150px;
   margin-top: 32px;
   margin-right: 16px;
-  padding: 15px 17px;
 }
 @media all and (max-width: 768px) {
   .inline-video iframe {
@@ -1518,44 +1375,22 @@ nav .container {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
 }
-/*!
-// 12. Galleries
-// --------------------------------------------------*/
-.instagram,
-.lightbox-gallery {
+.instagram {
   position: relative;
   padding: 216px 0px;
 }
-.gallery-header .logo {
-  max-width: 400px;
-  display: block;
-  margin: 0px auto;
-  margin-bottom: 12px;
-}
-@media screen and (max-width: 768px) {
-  .gallery-header .logo {
-    max-width: 200px;
-  }
-  .gallery-header h1 {
-    font-size: 24px !important;
-    line-height: 32px !important;
-  }
-}
-.instagram,
-.lightbox-gallery {
+.instagram {
   overflow: hidden;
   background: #000 !important;
 }
-.instagram ul,
-.lightbox-gallery ul {
+.instagram ul {
   overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0px;
 }
-.instagram li,
-.lightbox-gallery li {
+.instagram li {
   float: left;
   width: 20%;
   height: 50%;
@@ -1568,75 +1403,61 @@ nav .container {
   background-size: cover !important;
   opacity: 0.5;
 }
-.instagram li:hover,
-.lightbox-gallery li:hover {
+.instagram li:hover {
   opacity: 1 !important;
 }
-.instagram .container,
-.lightbox-gallery .container {
+.instagram .container {
   position: relative;
   z-index: 3;
 }
-.instagram i,
-.lightbox-gallery i {
+.instagram i {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 16px;
 }
-.instagram h1,
-.lightbox-gallery h1 {
+.instagram h1 {
   font-size: 42px;
   line-height: 48px;
   font-weight: 300;
   margin-bottom: 16px;
 }
 @media all and (max-width: 1200px) {
-  .instagram li:nth-child(n+9),
-  .lightbox-gallery li:nth-child(n+9) {
+  .instagram li:nth-child(n+9) {
     display: none;
   }
-  .instagram li,
-  .lightbox-gallery li {
+  .instagram li {
     width: 25%;
   }
 }
 @media all and (max-width: 900px) {
-  .instagram li:nth-child(n+7),
-  .lightbox-gallery li:nth-child(n+7) {
+  .instagram li:nth-child(n+7) {
     display: none;
   }
-  .instagram li,
-  .lightbox-gallery li {
+  .instagram li {
     width: 33.333333%;
   }
 }
 @media all and (max-width: 767px) {
-  .instagram,
-  .lightbox-gallery {
+  .instagram {
     padding: 144px 0px;
   }
-  .instagram li:nth-child(n+5),
-  .lightbox-gallery li:nth-child(n+5) {
+  .instagram li:nth-child(n+5) {
     display: none;
   }
-  .instagram li,
-  .lightbox-gallery li {
+  .instagram li {
     width: 50%;
   }
 }
 .testimonials {
   background: #f5f5f5;
 }
-.contained-gallery .instagram,
-.contained-gallery .lightbox-gallery {
+.contained-gallery .instagram {
   padding: 185px 0px;
 }
-.contained-gallery .instagram li:nth-child(n+9),
-.contained-gallery .lightbox-gallery li:nth-child(n+9) {
+.contained-gallery .instagram li:nth-child(n+9) {
   display: none;
 }
-.contained-gallery .instagram li,
-.contained-gallery .lightbox-gallery li {
+.contained-gallery .instagram li {
   width: 25%;
   opacity: 0.7;
 }
@@ -1644,42 +1465,30 @@ nav .container {
   .contained-gallery .instagram li:nth-child(n+7) {
     display: none;
   }
-  .contained-gallery .lightbox-gallery li:nth-child(n+7) {
-    display: none;
-  }
-  .contained-gallery .instagram li,
-  .contained-gallery .lightbox-gallery li {
+  .contained-gallery .instagram li {
     width: 33.33333%;
   }
-  .contained-gallery .instagram,
-  .contained-gallery .lightbox-gallery {
+  .contained-gallery .instagram {
     padding: 200px 0px;
   }
 }
 @media all and (max-width: 768px) {
-  .contained-gallery .instagram,
-  .contained-gallery .lightbox-gallery {
+  .contained-gallery .instagram {
     margin-bottom: 32px;
   }
   .contained-gallery .btn {
     margin-bottom: 0px;
   }
-  .contained-gallery .instagram li:nth-child(n+5),
-  .contained-gallery .lightbox-gallery li:nth-child(n+5) {
+  .contained-gallery .instagram li:nth-child(n+5) {
     display: block !important;
   }
-  .contained-gallery .instagram li:nth-child(n+7),
-  .contained-gallery .lightbox-gallery li:nth-child(n+7) {
+  .contained-gallery .instagram li:nth-child(n+7) {
     display: none !important;
   }
-  .contained-gallery .instagram li,
-  .contained-gallery .lightbox-gallery li {
+  .contained-gallery .instagram li {
     width: 33.33333% !important;
   }
 }
-/*!
-// 13. Pricing
-// --------------------------------------------------*/
 .pricing-option {
   overflow: hidden;
   background: #f5f5f5;
@@ -1744,7 +1553,7 @@ nav .container {
   color: #777777;
 }
 .pricing-option.emphasis {
-  background: #0072bc;
+  background: #ffda00;
   color: #fff;
 }
 .pricing-option.emphasis .type,
@@ -1762,9 +1571,6 @@ nav .container {
     text-align: center !important;
   }
 }
-/*!
-// Frequently Asked Questions
-// --------------------------------------------------*/
 .faq-item {
   margin-bottom: 36px;
 }
@@ -1773,9 +1579,6 @@ p.question {
   color: #333333;
   font-size: 16px;
 }
-/*!
-// Visitor Info
-// --------------------------------------------------*/
 .info-box {
   margin-bottom: 36px;
   position: relative;
@@ -1803,9 +1606,6 @@ p.question {
     float: left;
   }
 }
-/*!
-// 14. Subscribe
-// --------------------------------------------------*/
 .subscribe-1 {
   position: relative;
   overflow: hidden;
@@ -1876,15 +1676,9 @@ p.question {
     font-size: 20px;
     line-height: 26px;
   }
-  .subscribe-2 .form-email {
-    margin-bottom: 24px;
-  }
 }
-/*!
-// 15. Contact
-// --------------------------------------------------*/
 .contact-tweets {
-  background: #0072bc;
+  background: #ffda00;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -1928,75 +1722,28 @@ p.question {
   border-bottom: 2px solid #fff;
   padding-bottom: 1px;
 }
-.contact-tweets form {
-  padding-top: 0px !important;
-}
-.contact-tweets form .btn {
-  background: #fff;
-  color: #0072bc;
-}
-.contact-tweets form ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.9);
-}
-.contact-tweets form :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.9);
-}
-.contact-tweets form ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.9);
-}
-.contact-tweets form :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.9);
-}
-.contact-tweets .icon {
-  font-size: 60px;
-  margin-bottom: 12px;
-}
-.contact-tweets .form-message {
-  max-width: 95.5%;
-  width: 95.5%;
-}
-.fullwidth-map {
-  padding: 0px;
-  position: relative;
-  overflow: hidden;
-}
-.fullwidth-map .map-holder {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-.fullwidth-map.screen:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-/*!
-// Sponsors
-// --------------------------------------------------*/
 .sponsors {
   background: #f5f5f5;
 }
 .sponsor {
-  margin-bottom: 96px;
+  margin-bottom: 36px;
   height: 80px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 350px;
+  max-width: 150px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 140px;
+  max-height: 80px;
 }
 .sponsors span {
   display: inline-block;
   margin-top: 24px;
 }
 .sponsors span a {
-  color: #0072bc;
-  border-color: #0072bc;
+  color: #ffda00;
+  border-color: #ffda00;
 }
 @media all and (min-width: 321px) and (max-width: 767px) and (orientation: landscape) {
   .sponsors .col-sm-6 {
@@ -2004,9 +1751,6 @@ p.question {
     float: left;
   }
 }
-/*!
-// 16. Forms
-// --------------------------------------------------*/
 form.register {
   overflow: hidden;
   padding-top: 24px;
@@ -2089,7 +1833,7 @@ input[type="submit"] {
   background: rgba(0, 0, 0, 0.2);
 }
 .subscribe-2 i {
-  color: #0072bc;
+  color: #ffda00;
   font-size: 70px;
   display: inline-block;
   margin-right: 24px;
@@ -2146,11 +1890,8 @@ form .field-error {
     max-width: 100% !important;
   }
 }
-/*!
-// Utility Pages
-// --------------------------------------------------*/
 .error-page {
-  background: #0072bc;
+  background: #ffda00;
   padding: 0px;
 }
 .error-page h1 {
@@ -2181,41 +1922,38 @@ form .field-error {
     display: none;
   }
 }
-/*!
-// 17. Footers
-// --------------------------------------------------*/
-.footer .top-border {
+.subscribe-1 .footer .top-border {
   height: 2px;
   width: 100%;
   background: rgba(255, 255, 255, 0.3);
   margin-bottom: 32px;
 }
-.footer .menu {
+.subscribe-1 .footer .menu {
   overflow: visible;
 }
-.footer .menu li {
+.subscribe-1 .footer .menu li {
   top: 0px;
 }
-.footer .menu li a {
+.subscribe-1 .footer .menu li a {
   padding-bottom: 0px;
 }
-.footer .menu li .btn {
+.subscribe-1 .footer .menu li .btn {
   min-width: 0px;
   padding: 10px 18px;
   font-size: 14px;
 }
-.footer .menu li a {
+.subscribe-1 .footer .menu li a {
   diplay: inline-block;
   position: relative;
   border: none;
 }
-.footer .menu li a:hover {
+.subscribe-1 .footer .menu li a:hover {
   border: none;
 }
-.footer .back-to-top {
+.subscribe-1 .footer .back-to-top {
   padding-right: 42px;
 }
-.footer .menu li a i {
+.subscribe-1 .footer .menu li a i {
   font-size: 36px;
   position: absolute;
   right: 0px;
@@ -2249,14 +1987,6 @@ footer.classic .menu li a {
 footer.classic span.lead {
   display: inline-block;
   margin-bottom: 12px;
-}
-footer.short {
-  background: #333333;
-  color: #fff;
-  padding: 72px 0px;
-}
-footer.short .top-border {
-  height: 1px !important;
 }
 @media all and (max-width: 767px) {
   footer.classic div {
@@ -2297,45 +2027,4 @@ footer.classic .social-profiles {
 .social-profiles li a {
   color: #333333;
   font-size: 20px;
-}
-
-/* Tooltip for venue partner description */
-.tooltip__venue {
-  position: relative;
-}
-
-.tooltip__venue .tooltiptext {
-  cursor: default;
-  font-size: 15px;
-  visibility: hidden;
-  min-width: 265%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 13px 8px;
-  position: absolute;
-  z-index: 1;
-  top: 87px;
-  right: -83%;
-}
-@media all and (max-width: 767px) {
-  .tooltip__venue .tooltiptext {
-    display: none;
-  }
-}
-
-.tooltip__venue .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-
-.tooltip__venue:hover .tooltiptext {
-  visibility: visible;
 }

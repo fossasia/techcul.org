@@ -59,7 +59,7 @@
 }
 .overlay:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
   content: '';
   width: 100%;
@@ -140,7 +140,7 @@ nav {
 .strip-3 {
   width: 20px;
   height: 20px;
-  background: #0072bc;
+  background: #379d16;
   position: relative;
   -webkit-animation: stripMove 2s ease infinite alternate;
   animation: stripMove 2s ease infinite alternate;
@@ -149,12 +149,12 @@ nav {
 .strip-2 {
   -webkit-animation-duration: 2.1s;
   animation-duration: 2.1s;
-  background-color: #23a8ff;
+  background-color: #60e336;
 }
 .strip-3 {
   -webkit-animation-duration: 2.2s;
   animation-duration: 2.2s;
-  background-color: #89d1ff;
+  background-color: #a7ef90;
 }
 @-webkit-keyframes stripMove {
   0% {
@@ -374,8 +374,8 @@ span a:hover {
 }
 p a,
 .text-link a {
-  color: #0072bc !important;
-  border-color: #0072bc;
+  color: #379d16 !important;
+  border-color: #379d16;
   padding-bottom: 2px;
 }
 p a,
@@ -385,7 +385,7 @@ p a,
 .btn {
   min-width: 180px;
   border-radius: 25px;
-  background: #0072bc;
+  background: #379d16;
   text-align: center;
   padding: 13px 0px 14px 0px;
   color: #fff;
@@ -398,23 +398,23 @@ p a,
 }
 .btn:hover {
   color: #fff;
-  background: #0063a3;
+  background: #2f8713;
 }
 .btn-hollow {
   background: none;
-  border: 2px solid #0072bc;
-  color: #0072bc;
+  border: 2px solid #379d16;
+  color: #379d16;
 }
 .btn-hollow:hover {
-  background: #0072bc;
+  background: #379d16;
 }
 .btn-white {
   background: #fff;
-  color: #0072bc;
+  color: #379d16;
 }
 .btn-white:hover {
   background: #fff;
-  color: #005389;
+  color: #277010;
 }
 .btn-hollow.btn-white {
   background: none;
@@ -423,7 +423,7 @@ p a,
 }
 .btn-hollow.btn-white:hover {
   background: #fff;
-  color: #0072bc;
+  color: #379d16;
 }
 .btn-lg {
   padding: 20px 0px 21px 0px;
@@ -456,7 +456,7 @@ nav .logo {
   max-height: 45px;
   max-width: 110px;
   position: absolute;
-  top: -15px;
+  top: -6px;
   opacity: 1;
 }
 nav .text-right {
@@ -827,7 +827,7 @@ nav .container {
 }
 .hero-slider .slides li:before {
   background-color: #333333;
-  opacity: 0.7;
+  opacity: 0.4;
   position: absolute;
   content: '';
   width: 100%;
@@ -853,7 +853,7 @@ nav .container {
 }
 .hero-slider .btn-hollow:hover {
   background: #fff;
-  color: #0072bc;
+  color: #379d16;
 }
 @media all and (max-width: 767px) {
   .hero-slider .btn-hollow {
@@ -935,7 +935,7 @@ nav .container {
   text-align: left;
 }
 .primary-overlay:before {
-  background-color: #0072bc;
+  background-color: #379d16;
   opacity: 0.8;
   position: absolute;
   content: '';
@@ -943,7 +943,7 @@ nav .container {
   height: 100%;
   z-index: 1;
   top: 0px;
-  background-color: #0072bc !important;
+  background-color: #379d16 !important;
 }
 .strip-divider {
   padding: 216px 0px;
@@ -1188,7 +1188,7 @@ nav .container {
 }
 .color-blocks i,
 .contained-promo i {
-  color: #0072bc;
+  color: #379d16;
   font-size: 70px;
   display: inline-block;
   border: 2px solid #fff;
@@ -1203,10 +1203,10 @@ nav .container {
   -moz-transition: all 0.1s ease-out;
 }
 .block-left {
-  background-color: #0072bc;
+  background-color: #379d16;
 }
 .block-right {
-  background-color: #005993;
+  background-color: #2a7911;
   right: 0px;
 }
 @media all and (max-width: 768px) {
@@ -1347,7 +1347,7 @@ nav .container {
 }
 .topic i {
   font-size: 60px;
-  color: #0072bc;
+  color: #379d16;
   display: inline-block;
   margin-bottom: 32px;
 }
@@ -1388,7 +1388,6 @@ nav .container {
   min-width: 150px;
   margin-top: 32px;
   margin-right: 16px;
-  padding: 15px 17px;
 }
 @media all and (max-width: 768px) {
   .inline-video iframe {
@@ -1744,7 +1743,7 @@ nav .container {
   color: #777777;
 }
 .pricing-option.emphasis {
-  background: #0072bc;
+  background: #379d16;
   color: #fff;
 }
 .pricing-option.emphasis .type,
@@ -1884,7 +1883,7 @@ p.question {
 // 15. Contact
 // --------------------------------------------------*/
 .contact-tweets {
-  background: #0072bc;
+  background: #379d16;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -1933,7 +1932,7 @@ p.question {
 }
 .contact-tweets form .btn {
   background: #fff;
-  color: #0072bc;
+  color: #379d16;
 }
 .contact-tweets form ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.9);
@@ -1979,24 +1978,24 @@ p.question {
   background: #f5f5f5;
 }
 .sponsor {
-  margin-bottom: 96px;
+  margin-bottom: 36px;
   height: 80px;
   line-height: 80px;
 }
 .sponsor img {
-  max-width: 350px;
+  max-width: 150px;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
-  max-height: 140px;
+  max-height: 80px;
 }
 .sponsors span {
   display: inline-block;
   margin-top: 24px;
 }
 .sponsors span a {
-  color: #0072bc;
-  border-color: #0072bc;
+  color: #379d16;
+  border-color: #379d16;
 }
 @media all and (min-width: 321px) and (max-width: 767px) and (orientation: landscape) {
   .sponsors .col-sm-6 {
@@ -2089,7 +2088,7 @@ input[type="submit"] {
   background: rgba(0, 0, 0, 0.2);
 }
 .subscribe-2 i {
-  color: #0072bc;
+  color: #379d16;
   font-size: 70px;
   display: inline-block;
   margin-right: 24px;
@@ -2150,7 +2149,7 @@ form .field-error {
 // Utility Pages
 // --------------------------------------------------*/
 .error-page {
-  background: #0072bc;
+  background: #379d16;
   padding: 0px;
 }
 .error-page h1 {
@@ -2297,45 +2296,4 @@ footer.classic .social-profiles {
 .social-profiles li a {
   color: #333333;
   font-size: 20px;
-}
-
-/* Tooltip for venue partner description */
-.tooltip__venue {
-  position: relative;
-}
-
-.tooltip__venue .tooltiptext {
-  cursor: default;
-  font-size: 15px;
-  visibility: hidden;
-  min-width: 265%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 13px 8px;
-  position: absolute;
-  z-index: 1;
-  top: 87px;
-  right: -83%;
-}
-@media all and (max-width: 767px) {
-  .tooltip__venue .tooltiptext {
-    display: none;
-  }
-}
-
-.tooltip__venue .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-
-.tooltip__venue:hover .tooltiptext {
-  visibility: visible;
 }
